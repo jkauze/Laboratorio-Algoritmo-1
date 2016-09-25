@@ -30,9 +30,9 @@ el fin de semana. y ingresara las horas laboradas en los turnos del fin de seman
 
 En caso de ser GERENTE se le pedira que ingrese el numero de horas extras laboradas"""
 
-#Autor: Jesus Kauze 12-10273
+#Autor: Jesus Kauze 12-10273@usb.ve 	Alejandro Martinez 13-10839@usb.ve
 
-print("\nBienvenido al 'calculador de salario semanal JK'")
+print("\nBienvenido al 'calculador de salario semanal Por Jesus Y Alejandro'")
 print("\nCargos en la empresa: Supervisor - Trabajador -  Gerente")
 
 cargo = input("\nIngrese el cargo del empleado: ")
