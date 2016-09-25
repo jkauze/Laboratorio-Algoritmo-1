@@ -1,5 +1,5 @@
 #Programa para calcular el salario semanal de diferentes cargos en una empresa
-
+#prueba branch
 #CARGOS: Supervisor - Trabajador - Gerente
 
 #TURNOS:
@@ -36,6 +36,7 @@ print("\nBienvenido al 'calculador de salario semanal Por Jesus Y Alejandro'")
 print("\nCargos en la empresa: Supervisor - Trabajador -  Gerente")
 
 cargo = input("\nIngrese el cargo del empleado: ")
+cargo=cargo.upper()
 cargo=cargo.lower()
 
 print("")
