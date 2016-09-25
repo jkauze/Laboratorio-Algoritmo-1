@@ -36,6 +36,7 @@ print("\nBienvenido al 'calculador de salario semanal Por Jesus Y Alejandro'")
 print("\nCargos en la empresa: Supervisor - Trabajador -  Gerente")
 
 cargo = input("\nIngrese el cargo del empleado: ")
+cargo=cargo.upper()
 cargo=cargo.lower()
 
 print("")
