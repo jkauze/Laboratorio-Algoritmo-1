@@ -32,12 +32,10 @@ En caso de ser GERENTE se le pedira que ingrese el numero de horas extras labora
 
 #Autor: Jesus Kauze 12-10273
 
-print("Bienvenido al 'calculador de salario semanal JK'")
-print("")
-print("Cargos en la empresa: Supervisor - Trabajador -  Gerente")
-print("")
+print("\nBienvenido al 'calculador de salario semanal JK'")
+print("\nCargos en la empresa: Supervisor - Trabajador -  Gerente")
 
-cargo = input("Ingrese el cargo del empleado: ")
+cargo = input("\nIngrese el cargo del empleado: ")
 cargo=cargo.lower()
 
 print("")
@@ -49,12 +47,12 @@ assert(cargo == "gerente" or cargo == "supervisor" or cargo == "trabajador")
 if cargo=="gerente":
 	print("El cargo de gerente tiene un pago semanal de 950$")
 	print("adicionalmente se paga 10$ x hora extra laborada")
-	print("")
-	extra=int(input("introduzca las horas extras trabajadas: "))
+	extra=int(input("\nintroduzca las horas extras trabajadas: "))
+	
 	bono_extra=extra*10
 	total=950+bono_extra
-	print("")
-	print("Subtotal Semanal: 950$")
+	
+	print("\nSubtotal Semanal: 950$")
 	print("Bono hora extra: " + str(bono_extra) +"$")
 	print("Total Semanal: " + str(total) + "$")
 
@@ -68,11 +66,10 @@ elif cargo=="supervisor":
 	print("(6:00pm - 12:00am) NOCTURNO: 60$ por Hora (maximo 30 horas de lunes a viernes)")
 	print("----------------------------------------------------------------")
 	print("Adicionalmente poseen un bono nocturno de un 30% del total de horas nocturnas trabajadas")
-	print("")
 	
 	#Entrada Lunes - viernes
 	
-	horas_matutino=int(input("Introduzca el total de horas matutinas de lunes a viernes: "))
+	horas_matutino=int(input("\nIntroduzca el total de horas matutinas de lunes a viernes: "))
 	horas_vespertino=int(input("Introduzca el total de horas vespertino de lunes a viernes: "))
 	horas_nocturnas=int(input("Introduzca el total de horas nocturnas de lunes a viernes: "))
 	
@@ -84,13 +81,11 @@ elif cargo=="supervisor":
 	
 	total_lunes_viernes = semanal_matutino + semanal_vespertino + semanal_nocturnas
 
-	print("")
-	print("El bono feriado se aplica al total de horas trabajadas el fin de semana. el cual se paga un 50% del concepto trabajado")
-	print("")
+	print("\nEl bono feriado se aplica al total de horas trabajadas el fin de semana. el cual se paga un 50% del concepto trabajado")
 	
 	#Entrada Feriado
 	
-	horas_feriado_matutino = int(input("Introduzca las horas matutinas trabajadas el fin de semana (maximo 12 horas)"))
+	horas_feriado_matutino = int(input("\nIntroduzca las horas matutinas trabajadas el fin de semana (maximo 12 horas)"))
 	horas_feriado_vespertino = int(input("Introduzca las horas vespertinas trabajadas el fin de semana (maximo 12 horas)"))
 	horas_feriado_nocturnas = int(input("Introduzca las horas nocturas trabajadas el fin de semana (maximo 12 horas)"))
 	
@@ -113,8 +108,7 @@ elif cargo=="supervisor":
 	
 	#Salida
 	
-	print("")
-	print("Subtotal Lunes - viernes: " + str(total_lunes_viernes) +"$")
+	print("\nSubtotal Lunes - viernes: " + str(total_lunes_viernes) +"$")
 	print("Bono Nocturno: " + str(bono_nocturno) + "$")
 	print("Subtotal Sabado - Domingo: " + str(subtotal_feriado) + "$")
 	print("Bono Feriado: " + str(bono_total) + "$")
@@ -130,11 +124,10 @@ elif cargo == "trabajador":
 	print("(6:00pm - 12:00am) NOCTURNO: 40 por Hora (maximo 30 horas de lunes a viernes)")
 	print("----------------------------------------------------------------")
 	print("Adicionalmente posee un bono nocturno de un 30% del total de horas nocturnas trabajadas")
-	print("")
 	
 	#Entrada
 	
-	horas_matutino=int(input("Introduzca el total de horas matutinas de lunes a viernes: "))
+	horas_matutino=int(input("\nIntroduzca el total de horas matutinas de lunes a viernes: "))
 	horas_vespertino=int(input("Introduzca el total de horas vespertino de lunes a viernes: "))
 	horas_nocturnas=int(input("Introduzca el total de horas nocturnas de lunes a viernes: "))
 	
@@ -146,13 +139,11 @@ elif cargo == "trabajador":
 	
 	total_lunes_viernes = semanal_matutino + semanal_vespertino + semanal_nocturnas
 	
-	print("")
-	print("El bono feriado se aplica al total de horas trabajadas el fin de semana. el cual se paga un 50% del concepto trabajado")
-	print("")
+	print("\nEl bono feriado se aplica al total de horas trabajadas el fin de semana. el cual se paga un 50% del concepto trabajado")
 	
 	#Entrada Feriado
 	
-	horas_feriado_matutino = int(input("Introduzca las horas matutinas trabajadas el fin de semana (maximo 12 horas)"))
+	horas_feriado_matutino = int(input("\nIntroduzca las horas matutinas trabajadas el fin de semana (maximo 12 horas)"))
 	horas_feriado_vespertino = int(input("Introduzca las horas vespertinas trabajadas el fin de semana (maximo 12 horas)"))
 	horas_feriado_nocturnas = int(input("Introduzca las horas nocturas trabajadas el fin de semana (maximo 12 horas)"))
 	
@@ -175,8 +166,7 @@ elif cargo == "trabajador":
 	
 	#Salida
 	
-	print("")
-	print("Subtotal Lunes - viernes: " + str(total_lunes_viernes) +"$")
+	print("\nSubtotal Lunes - viernes: " + str(total_lunes_viernes) +"$")
 	print("Bono Nocturno: " + str(bono_nocturno) + "$")
 	print("Subtotal Sabado - Domingo: " + str(subtotal_feriado) + "$")
 	print("Bono Feriado: " + str(bono_total) + "$")
@@ -185,6 +175,7 @@ elif cargo == "trabajador":
 else:
 	print("Por favor introduzca un cargo real.")
 
-print("Gracias por usar el programa. att: Jesus Kauze")
+print("Gracias por usar el programa. att: Alejandro Martinez and Jesus Kauze")
+print"(Universidad Simon Bolivar")
 	
 	
