@@ -1,3 +1,5 @@
+#"Prelab4Ejercicio1.py" Programa realizado por Alejandro Martinez (13-10839@usb.ve) y Jesus Kauze (12-10273@usb.ve)
+
 #Programa Que almacena 10 enteros y los suma
 
 #Variables
