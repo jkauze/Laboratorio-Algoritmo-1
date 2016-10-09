@@ -29,7 +29,7 @@ lista = sorted(lista, key=lambda competidor: competidor.hamburguesas, reverse = 
 
 #POSTCONDICION: verificamos que de primera posicion este el concursante que posea mayor numero de hamburguesas y asi mismo con la siguiente posicion con respecto a la siguiente
 
-assert(lista[x].hamburguesas > lista[x+1].hamburguesas for x in range(0,5))
+assert(lista[x].hamburguesas >= lista[x+1].hamburguesas for x in range(0,5))
 
 #Salida
 
