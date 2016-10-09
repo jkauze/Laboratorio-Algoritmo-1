@@ -32,7 +32,7 @@ for x in range(N):
 	grupo[x].nombre= input("\nnombre del estudiante " + str(x) + "? ")
 	grupo[x].indice= float(input("indice del estudiante " + str(x) + "? "))
 	grupo[x].edad= int(input("edad del estudiante " + str(x) + "? "))
-	assert(len(grupo[x].nombre)>1 and grupo[x].edad > 0 and grupo[x].indice>0) #Verificacion de que el nombre tenga al menos 2 caracteres y la edad e indice sean positivo
+	assert(len(grupo[x].nombre)>=1 and grupo[x].edad > 0 and grupo[x].indice>0) #Verificacion de que el nombre tenga al menos 2 caracteres y la edad e indice sean positivo
   
 #promedio de las edades
 
