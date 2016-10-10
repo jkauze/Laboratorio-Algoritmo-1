@@ -1,8 +1,10 @@
+#"Prelab4Ejercicio1.py" Programa realizado por Alejandro Martinez (13-10839@usb.ve) y Jesus Kauze (12-10273@usb.ve)
+
 #Avila Burger RETO
 
 #El cliente pide el programa para solamente 5 participantes
 
-#Programa que se encarga de verificar el ganador en una competencia de quien come mas hamburguesas
+#Programa que se encarga de verificar el ganador en una competencia de quien come mas hamburguesas?
 
 #Creamos nuestra Clase Competidor
 
