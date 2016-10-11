@@ -4,7 +4,7 @@
 
 #El cliente pide el programa para solamente 5 participantes
 
-#Programa que se encarga de verificar el ganador en una competencia de quien come mas hamburguesas?
+#Programa que se encarga de verificar el ganador en una competencia de quien come mas hamburguesas
 
 #Creamos nuestra Clase Competidor
 
@@ -21,21 +21,21 @@ lista=[competidor(),competidor(),competidor(),competidor(),competidor()]
 for estudiante in range(0,5):
 	lista[estudiante].nombre=input("\nNombre del concursante: ")
 	lista[estudiante].hamburguesas=int(input("Numero de hamburguesas comidas: "))
+	assert(len(lista[estudiante].nombre) >= 1) #verifica que el nombre tenga al menos 1 caracter
 
-	#PRECONDICION: Verifica que el numero de hamburguesas de cada participante sea un numero positivo
+#PRECONDICION: Verifica que el numero de hamburguesas de cada participante sea un numero positivo
 
-	assert(lista[estudiante].hamburguesas >= 0) 
+assert(all(lista[i].hamburguesas >= 0 for i in range(0,5)))  
 
 #Ordenamos nuestra lista de mayor a menor, dependiendo del numero de hamburguesas comidas
 lista = sorted(lista, key=lambda competidor: competidor.hamburguesas, reverse = True)
 
 #POSTCONDICION: verificamos que de primera posicion este el concursante que posea mayor numero de hamburguesas y asi mismo con la siguiente posicion con respecto a la siguiente
 
-assert(lista[x].hamburguesas >= lista[x+1].hamburguesas for x in range(0,5))
+assert(lista[x].hamburguesas > lista[x+1].hamburguesas for x in range(0,5))
 
 #Salida
 
 print("\nEL GANADOR ES: " + lista[0].nombre + " CON " + str(lista[0].hamburguesas) + "\nLe siguen:")
 for i in range(1,5):
-	print(lista[i].nombre + " con " + str(lista[i].hamburguesas) + " hamburguesas")
-print("\nGracias por usar Preferirnos Att: Avila Burguers (J.K. A.M.)")
+	print(lista[i].nombre + " con " + str(lista[i].hamburguesas) + "
