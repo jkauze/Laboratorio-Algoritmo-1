@@ -27,8 +27,6 @@ En caso de ser GERENTE se le pedira que ingrese el numero de horas extras labora
 
 #Autor: Jesus Kauze 12-10273@usb.ve 	Alejandro Martinez 13-10839@usb.ve
 
-import sys 
-
 #Variables:
 horas_matutino=0
 horas_vespertino=0
